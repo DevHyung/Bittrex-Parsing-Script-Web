@@ -1,0 +1,23 @@
+CREATE SCHEMA `bittrex` ;
+
+CREATE TABLE `bittrex`.`lsy_parsinglog` (
+  `idx` int(11) NOT NULL AUTO_INCREMENT,
+  `id` varchar(45) DEFAULT NULL,
+  `log` datetime DEFAULT NULL,
+  PRIMARY KEY (`idx`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `bittrex`.`lsy_bitcoin` (
+  `idx` int(11) NOT NULL AUTO_INCREMENT,
+  `stock` varchar(45) DEFAULT NULL,
+  `buy` float DEFAULT NULL,
+  `sell` float DEFAULT NULL,
+  `time` datetime DEFAULT NULL,
+  PRIMARY KEY (`idx`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+
+DELETE FROM `bittrex`.`lsy_parsinglog`
+
+DELETE FROM `bittrex`.`lsy_bitcoin` 
